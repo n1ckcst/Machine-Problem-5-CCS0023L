@@ -7,7 +7,7 @@ public class Person {
     private int age;
     private char gender;
 
-    public Person(String name, int age, char gender) {  // "this" keyword to refer to the current object's attributes (object = person)
+    public Person(String name, int age, char gender){  // "this" keyword to refer to the current object's attributes (object = person)
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -38,6 +38,6 @@ public class Person {
     }
     public void setGender(char gender) {
         this.gender = gender;
-    }
-    
+    }    
 }
+
