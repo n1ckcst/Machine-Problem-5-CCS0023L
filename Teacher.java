@@ -3,8 +3,8 @@ class Teacher extends Person {
     private double salary;
 
 
-    public Teacher(String name, int age, char gendeder, double salary) {
-        super(name, age, gendeder);
+    public Teacher(String name, int age, char gender, double salary) {
+        super(name, age, gender);
         this.salary = salary;
     }
 

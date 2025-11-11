@@ -1,6 +1,37 @@
 // blueprint for Person object
 // superclass of Student and Teacher
 
+
+// USER DEFINED EXCEPTIONS (SOURCE: https://www.geeksforgeeks.org/java/user-defined-custom-exception-in-java/)
+
+//for invalid age
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+// for invalid grade
+class InvalidGradeException extends Exception {
+    public InvalidGradeException(String message) {
+        super(message);
+    }
+} 
+
+// for invalid salary
+class InvalidSalaryException extends Exception {
+    public InvalidSalaryException(String message) {
+        super(message);
+    }
+}
+
+// for invalid gender
+class InvalidGenderException extends Exception {
+    public InvalidGenderException(String message) {
+        super(message);
+    }
+}
+
 public class Person {
 
     private String name;
