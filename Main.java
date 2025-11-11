@@ -2,37 +2,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-// USER DEFINED EXCEPTIONS (SOURCE: https://www.geeksforgeeks.org/java/user-defined-custom-exception-in-java/)
-
-//for invalid age
-class InvalidAgeException extends Exception {
-    public InvalidAgeException(String message) {
-        super(message);
-    }
-}
-
-// for invalid grade
-class InvalidGradeException extends Exception {
-    public InvalidGradeException(String message) {
-        super(message);
-    }
-} 
-
-// for invalid salary
-class InvalidSalaryException extends Exception {
-    public InvalidSalaryException(String message) {
-        super(message);
-    }
-}
-
-// for invalid gender
-class InvalidGenderException extends Exception {
-    public InvalidGenderException(String message) {
-        super(message);
-    }
-}
-
-
 // MAIN CLASS
 public class Main {
 
@@ -53,7 +22,6 @@ public class Main {
                     throw new InvalidAgeException("Age is invalid. It must be between 1 and 110.");                                                                          
                 }
             break;
-
             } catch (InvalidAgeException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1AGE
             } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid integer for age."); // REGULAR EXCEPTION
@@ -199,7 +167,7 @@ public class Main {
         }
 
          char teacherGender;
-          while (true) { // STUDENT 2 GENDER
+          while (true) { // TEACHER 2 GENDER
             System.out.print("Gender (M/F): ");
             try {
                 teacherGender = scanner.next().charAt(0); // read only the first character
@@ -209,11 +177,11 @@ public class Main {
                 if (!((teacherGender == 'M') || (teacherGender == 'F') || (teacherGender == 'm') || (teacherGender == 'f'))) {
                     throw new InvalidGenderException("Invalid input. Please enter only Male [M] or Female [F].");
                 }
-                student1Gender = Character.toUpperCase(student1Gender);
+                teacherGender = Character.toUpperCase(teacherGender);
             break; // Exit loop when valid  
-            }catch (InvalidGenderException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1GENDER
+            }catch (InvalidGenderException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: TEACHER GENDER
             }catch (NullPointerException e) { System.out.println("Input cannot be null. Please try again.");
-            }catch (InputMismatchException e) { System.out.println("Input Mismatch. Digits are not allowed."); // USER DEFINED EXCEPTION HANDLING: STUDENT1GENDER (MISMATCH DIGITS/CHARACTERS)
+            }catch (InputMismatchException e) { System.out.println("Input Mismatch. Digits are not allowed."); // USER DEFINED EXCEPTION HANDLING: TEACHER GENDER (MISMATCH DIGITS/CHARACTERS)
             }catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             }catch (Exception e) { System.out.println("General exception occurred: ");
             }finally { scanner.nextLine(); // Clear the invalid input
@@ -231,7 +199,7 @@ public class Main {
                 }
             break;
 
-            } catch (InvalidSalaryException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1AGE
+            } catch (InvalidSalaryException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: TEACHER SALARY
             } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid number for salary."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
