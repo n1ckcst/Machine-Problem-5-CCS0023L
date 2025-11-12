@@ -23,7 +23,6 @@ public class Main {
                 }
             break;
             } catch (InvalidAgeException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1AGE
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid integer for age."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -45,7 +44,6 @@ public class Main {
                 student1Gender = Character.toUpperCase(student1Gender);
             break; // Exit loop when valid  
             }catch (InvalidGenderException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1GENDER
-            }catch (NullPointerException e) { System.out.println("Input cannot be null. Please try again.");
             }catch (InputMismatchException e) { System.out.println("Input Mismatch. Digits are not allowed."); // USER DEFINED EXCEPTION HANDLING: STUDENT1GENDER (MISMATCH DIGITS/CHARACTERS)
             }catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             }catch (Exception e) { System.out.println("General exception occurred: ");
@@ -63,7 +61,6 @@ public class Main {
                 } 
             break;
             } catch (InvalidGradeException e) { System.out.println(e.getMessage());  // USER-DEFINED EXCEPTION HANDLING: STUDENT1GRADE
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid number for grade.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid number for grade."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -91,7 +88,6 @@ public class Main {
             break;
 
             } catch (InvalidAgeException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1AGE
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid integer for age."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -113,7 +109,6 @@ public class Main {
                 student2Gender = Character.toUpperCase(student2Gender);
             break; // Exit loop when valid  
             }catch (InvalidGenderException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1GENDER
-            }catch (NullPointerException e) { System.out.println("Input cannot be null. Please try again.");
             }catch (InputMismatchException e) { System.out.println("Input Mismatch. Digits are not allowed."); // USER DEFINED EXCEPTION HANDLING: STUDENT1GENDER (MISMATCH DIGITS/CHARACTERS)
             }catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             }catch (Exception e) { System.out.println("General exception occurred: ");
@@ -131,7 +126,6 @@ public class Main {
                 } 
             break;
             } catch (InvalidGradeException e) { System.out.println(e.getMessage());  // USER-DEFINED EXCEPTION HANDLING: STUDENT1GRADE
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid number for grade.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid number for grade."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -158,7 +152,6 @@ public class Main {
             break;
 
             } catch (InvalidAgeException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: STUDENT1AGE
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid integer for age."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -180,7 +173,6 @@ public class Main {
                 teacherGender = Character.toUpperCase(teacherGender);
             break; // Exit loop when valid  
             }catch (InvalidGenderException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: TEACHER GENDER
-            }catch (NullPointerException e) { System.out.println("Input cannot be null. Please try again.");
             }catch (InputMismatchException e) { System.out.println("Input Mismatch. Digits are not allowed."); // USER DEFINED EXCEPTION HANDLING: TEACHER GENDER (MISMATCH DIGITS/CHARACTERS)
             }catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             }catch (Exception e) { System.out.println("General exception occurred: ");
@@ -200,7 +192,6 @@ public class Main {
             break;
 
             } catch (InvalidSalaryException e) { System.out.println(e.getMessage()); // USER-DEFINED EXCEPTION HANDLING: TEACHER SALARY
-            } catch (NullPointerException e) { System.out.println("Input cannot be null. Please enter a valid integer for age.");
             } catch (InputMismatchException e) { System.out.println("Input Mismatch. Please enter a valid number for salary."); // REGULAR EXCEPTION
             } catch (RuntimeException e) { System.out.println("Runtime Exception. An unexpected error occurred: ");
             } catch (Exception e) { System.out.println("General Exception occured: ");
@@ -239,4 +230,3 @@ public class Main {
         scanner.close();
     }
 }
-
